@@ -23,6 +23,6 @@ ds_list_delete(global.gml_task_list,_index);
 ds_map_delete(global.gml_task_map,_task_name);
 
 // Debugging
-if ( global.gml_task_debug ) {
+if ( GML_TASK_DEBUG ) {
 	show_debug_message("Async task complete \"" + _task_name + "\"");
 }

@@ -4,8 +4,9 @@
     "mvc": "1.1",
     "name": "0bdb129d-4c50-4f42-98f2-b5566999f17a",
     "children": [
-        "7bd6793a-a8d1-4e17-ae3c-7acdef942b61",
-        "4f37c559-6ee8-4077-94a0-25ae545ec131",
+        "d78d4096-4465-4a12-ac58-3ff16bd4b8f0",
+        "98bfe04c-57c8-4ab9-9bfa-d78e8f53fd62",
+        "01c73add-9957-413a-b719-2a5fa97acb66",
         "6fa625d8-f4a6-41ba-9b60-df5b2cd325bb",
         "9067a0ed-2676-405b-a909-cf5ba1333093",
         "f6eed01c-3a4a-43af-8f37-c8fb650d5538",
@@ -20,7 +21,7 @@
         "c9f9a1eb-c63b-4633-a8b5-7a65a80b7201"
     ],
     "filterType": "GMScript",
-    "folderName": "Gml Tasks",
+    "folderName": "GML Task",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

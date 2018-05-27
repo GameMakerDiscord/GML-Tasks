@@ -48,7 +48,7 @@ for ( var i = 0; i < _arg_count; ++ i; ) {
 ds_map_add(_map,Gml_Tasks.Script_Count,_arg_count);
 
 // Debugging
-if ( global.gml_task_debug ) {
+if ( GML_TASK_DEBUG ) {
 	show_debug_message("New async task \"" + string(argument[0]) + "\"");
 }
 

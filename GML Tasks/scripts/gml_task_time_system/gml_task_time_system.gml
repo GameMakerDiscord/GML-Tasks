@@ -5,5 +5,5 @@ gml_pragma("forceinline");
 
 // Should be called inside of task scripts
 
-global.gml_task_timer = (get_timer() - global.gml_task_timer_beginning) / global.gml_task_framerate_time;
+global.gml_task_timer = (get_timer() - global.gml_task_timer_beginning) / GML_TASK_FRAMERATE_TIME;
 return global.gml_task_timer;
