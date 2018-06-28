@@ -5,16 +5,16 @@
 gml_pragma("forceinline");
 
 // Get the name for later
-var _task_name = string(argument0[? Gml_Tasks.Name]);
+var _task_name = string(argument0[? GmlTasks.Name]);
 
 // Run cleanup script if it has been assigned
-if ( ds_map_exists(argument0,Gml_Tasks.Cleanup_Script) ) {
-	script_execute(argument0[? Gml_Tasks.Cleanup_Script]);
+if ( ds_map_exists(argument0,GmlTasks.Cleanup_Script) ) {
+	script_execute(argument0[? GmlTasks.Cleanup_Script]);
 }
 
 // Populate necessary keys in our task map
-ds_list_destroy(argument0[? Gml_Tasks.Scripts]);
-ds_map_destroy(argument0[? Gml_Tasks.Values]);
+ds_list_destroy(argument0[? GmlTasks.Scripts]);
+ds_map_destroy(argument0[? GmlTasks.Values]);
 
 var _index = ds_list_find_index(global.gml_task_list,argument0);
 ds_map_destroy(global.gml_task_list[| _index]);

@@ -25,8 +25,8 @@ if ( argument_count > 0 ) {
 
 global.gml_task_framerate_time = (1000000 / global.gml_task_min_framerate);
 
-// Enumerat||s
-enum Gml_Tasks {
+// Enumeraters
+enum GmlTasks {
 	Scripts,
 	Cleanup_Script,
 	Values,

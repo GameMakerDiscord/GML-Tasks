@@ -19,10 +19,10 @@ while ( (global.gml_task_timer < 1 || _forced_iteration_count > 0) && ds_list_si
 	
 		// If we have time left we execute the next script
 		if ( ds_list_find_index(_task_skip_list,_task_map) == -1 ) {
-			if ( get_timer() - _fps_time < 1000000 / _task_map[? Gml_Tasks.Fps_Min] || _forced_iteration_count > 0 ) {
+			if ( get_timer() - _fps_time < 1000000 / _task_map[? GmlTasks.Fps_Min] || _forced_iteration_count > 0 ) {
 				global.gml_task_current_task = _task_map;
-				_script_list = _task_map[? Gml_Tasks.Scripts];
-				if ( script_execute(_script_list[| 0]) == Gml_Tasks.Script_Complete ) {
+				_script_list = _task_map[? GmlTasks.Scripts];
+				if ( script_execute(_script_list[| 0]) == GmlTasks.Script_Complete ) {
 					ds_list_delete(_script_list,0);
 		
 					if ( ds_list_size(_script_list) == 0 ) {
@@ -30,7 +30,7 @@ while ( (global.gml_task_timer < 1 || _forced_iteration_count > 0) && ds_list_si
 						-- i;
 					}
 				}
-				_forced_iteration_count --; // Deduct this iteration from the forced iteration count
+				-- _forced_iteration_count; // Deduct this iteration from the forced iteration count
 			} else {
 				ds_list_add(_task_skip_list,_task_map);
 			}

@@ -5,4 +5,4 @@
 gml_pragma("forceinline");
 
 // Returns a percentage from 0 to 1
-return argument0[? Gml_Tasks.Scripts] / argument0[? Gml_Tasks.Script_Count];
+return argument0[? GmlTasks.Scripts] / argument0[? GmlTasks.Script_Count];

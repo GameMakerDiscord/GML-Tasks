@@ -8,4 +8,4 @@ if ( global.gml_task_current_task == undefined ) {
 
 ds_grid_destroy(gml_task_value_get(_task_map,"grid"));
 
-return Gml_Tasks.Script_Complete;
+return GmlTasks.Script_Complete;

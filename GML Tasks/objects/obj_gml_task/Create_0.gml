@@ -1,6 +1,6 @@
 /// @desc Example Create
 
-gml_task_ini(30,3,true);
+gml_task_ini(60,3,true); // This instance ideally should be created first
 
 // All the code below is for the sake of example
 
@@ -8,8 +8,8 @@ for ( var i = 0; i < 10; ++ i; ) {
 	var _task_map =
 	gml_task_create(
 
-	// Name of task, doesn't have to be a string
-	"grid fill " + string(i),
+	// Name of task, should be a real
+	i,
 
 	// Target framerate
 	62,

@@ -6,7 +6,7 @@ draw_text_transformed(640,240,"Framerate: " + string(fps_real),4,4,0);
 
 for ( var i = 0; i < ds_list_size(global.gml_task_list); ++ i; ) {
 	
-	var _task_map = gml_task_find("grid fill " + string(i));
+	var _task_map = gml_task_find(i);
 	if ( _task_map != undefined ) {
 		var
 		_x = gml_task_value_get(_task_map,"x"),

@@ -4,5 +4,4 @@
 
 gml_pragma("forceinline");
 
-var _map = argument0[? Gml_Tasks.Values];
-return _map[? argument1];
+return ds_map_find_value(argument0[? GmlTasks.Values],argument1);

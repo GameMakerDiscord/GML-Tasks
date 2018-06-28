@@ -27,25 +27,25 @@ ds_map_add(global.gml_task_map,argument[0],global.gml_task_list[| _index]);
 var _map = global.gml_task_list[| _index];
 
 // Populate necessary keys in our task map
-ds_map_add(_map,Gml_Tasks.Scripts,ds_list_create());
-ds_map_add(_map,Gml_Tasks.Values,ds_map_create());
-ds_map_add(_map,Gml_Tasks.Fps_Min,argument[1]);
-ds_map_add(_map,Gml_Tasks.Name,argument[0]);
-ds_map_add(_map,Gml_Tasks.Completion_Time,get_timer());
+ds_map_add(_map,GmlTasks.Scripts,ds_list_create());
+ds_map_add(_map,GmlTasks.Values,ds_map_create());
+ds_map_add(_map,GmlTasks.Fps_Min,argument[1]);
+ds_map_add(_map,GmlTasks.Name,argument[0]);
+ds_map_add(_map,GmlTasks.Completion_Time,get_timer());
 
 // Add scripts to our task map
 var
 _map = global.gml_task_list[| _index],
 _arg_count = argument_count - 2,
-_list = _map[? Gml_Tasks.Scripts];
+_list = _map[? GmlTasks.Scripts];
 
-var _list = _map[? Gml_Tasks.Scripts];
+var _list = _map[? GmlTasks.Scripts];
 for ( var i = 0; i < _arg_count; ++ i; ) {
 	ds_list_add(_list,argument[i + 2]);
 }
 
 // Used for task progress checking
-ds_map_add(_map,Gml_Tasks.Script_Count,_arg_count);
+ds_map_add(_map,GmlTasks.Script_Count,_arg_count);
 
 // Debugging
 if ( global.gml_task_debug ) {

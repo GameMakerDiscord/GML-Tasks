@@ -4,8 +4,8 @@
 
 gml_pragma("forceinline");
 
-if ( ds_map_exists(argument0,Gml_Tasks.Cleanup_Script) ) {
-	ds_map_add(argument0,Gml_Tasks.Cleanup_Script,argument1);
+if ( ds_map_exists(argument0,GmlTasks.Cleanup_Script) ) {
+	ds_map_add(argument0,GmlTasks.Cleanup_Script,argument1);
 } else {
-	argument0[? Gml_Tasks.Cleanup_Script] = argument1;
+	argument0[? GmlTasks.Cleanup_Script] = argument1;
 }
